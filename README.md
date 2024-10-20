@@ -35,48 +35,48 @@ The Real-Time Weather Application is a React Native application designed to prov
    git clone https://github.com/yourusername/weather-app.git
    cd weather-app
    
---Install frontend dependencies:--
+2. **Install frontend dependencies:**
 
---Navigate to the frontend directory and install dependencies:
-
-bash
-cd frontend
-npm install
-
---Setup backend:--
-
---Navigate to the backend directory and install dependencies:
+- Navigate to the frontend directory and install dependencies:
 
 bash
-cd backend
-npm install
+- cd frontend
+- npm install
 
---Environment Configuration:
+3. **Setup backend:**
 
---Create a .env file in the backend directory and add your MongoDB URI:
-
-MONGO_URI=mongodb://your_mongodb_uri_here
-
---Start the backend server:
-
-In the backend directory, run:
+- Navigate to the backend directory and install dependencies:
 
 bash
-node server.js
-The server should now be running on http://localhost:5001.
+- cd backend
+- npm install
 
---Start the frontend application:
+4. **Environment Configuration:**
 
-In the frontend directory, run:
+- Create a .env file in the backend directory and add your MongoDB URI:
+
+- MONGO_URI=mongodb://your_mongodb_uri_here
+
+### Start the backend server:
+
+**In the backend directory, run:**
 
 bash
-npm start
+- node server.js
+- The server should now be running on http://localhost:5001.
+
+### Start the frontend application:
+
+**In the frontend directory, run:**
+
+bash
+- npm start
 
 
-This will open a new window in your default browser. Follow the instructions to run the app on an emulator or your device.
+- This will open a new window in your default browser. Follow the instructions to run the app on an emulator or your device.
 
-##Component Overview
-###Frontend Components
+## Component Overview
+### Frontend Components
 - SummaryList.js
 - Fetches and displays historical weather summaries from the backend API.
 - Uses a FlatList to render individual summary items with temperature and wind speed data.
@@ -92,7 +92,7 @@ This will open a new window in your default browser. Follow the instructions to 
 - Displays alert messages when severe weather conditions are detected.
 - Uses a conditional render to show alerts based on the presence of messages.
   
-###Backend Functionality
+### Backend Functionality
 - server.js
 - Initializes an Express.js server and connects to MongoDB.
 - Defines a schema for storing daily weather summaries.
@@ -101,8 +101,8 @@ This will open a new window in your default browser. Follow the instructions to 
 - API Endpoints
 - POST /summaries: Accepts JSON data containing weather summary details and stores it in the MongoDB database.
 
-##MongoDB Schema
-###The DailySummary schema includes the following fields:
+## MongoDB Schema
+### The DailySummary schema includes the following fields:
 
 - avgTemp: Average temperature for the day (Number).
 - maxTemp: Maximum temperature for the day (Number).
@@ -112,7 +112,7 @@ This will open a new window in your default browser. Follow the instructions to 
 - dominantCondition: Main weather condition for the day (String).
 - date: Date of the summary (String).
   
-###Usage
+### Usage
 - Launch the application on your device or emulator to view the weather summaries and forecasts.
 - Navigate through different screens to explore historical data and current weather conditions.
 - Enable alerts to stay informed about severe weather events.
@@ -122,13 +122,13 @@ This will open a new window in your default browser. Follow the instructions to 
 - Integrate real-time weather updates using WebSockets.
 - Expand the API to include additional weather data sources.
   
-###Contributing
+### Contributing
 - Contributions are welcome! Please open an issue or submit a pull request to improve the project.
 
-##License
+## License
 - This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Acknowledgements
+## Acknowledgements
 - Special thanks to the developers of React Native and the libraries used in this project.
 
 ### Analysis of the Provided Code
